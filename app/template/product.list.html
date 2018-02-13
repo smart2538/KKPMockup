@@ -1,0 +1,50 @@
+<div class="am-mainpanel">
+    <div class="am-pagetitle">
+        <h5 class="am-title">Products List</h5>
+    </div>
+    <!-- am-pagetitle -->
+    <div class="am-pagebody">
+
+        <div class="card pd-20 pd-sm-40">
+            <div class="table-wrapper">
+                <table id="datatable1" class="table display responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th class="wd-15p">Image</th>
+                            <th class="wd-15p">Name</th>
+                            <th class="wd-20p">Price</th>
+                            <th class="wd-15p">Category</th>
+                            <th class="wd-10p">Quantity</th>
+                            <th class="wd-15p">Status</th>
+                            <th class="wd-10p">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="product in productList track by $index">
+                            <td>
+                                <img width="75" height="75" ng-src="{{product.image}}" alt="">
+                            </td>
+                            <td>{{product.name}}</td>
+                            <td>{{product.price | currency}}</td>
+                            <td>{{product.category}}</td>
+                            <td>{{product.quantity}}</td>
+                            <td>{{product.status}}</td>
+                            <td>
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- table-wrapper -->
+        </div>
+    </div>
+    <!-- am-pagebody -->
+    <div class="am-footer">
+        <span>Copyright &copy;. All Rights Reserved. Amanda Responsive Bootstrap 4 Admin Dashboard.</span>
+        <span>Created by: ThemePixels, Inc.</span>
+    </div>
+    <!-- am-footer -->
+</div>
+<!-- am-mainpanel -->
