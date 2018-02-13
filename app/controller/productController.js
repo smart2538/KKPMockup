@@ -1,22 +1,23 @@
 app.controller('productListController', productListController);
+app.controller('productCreateController', productCreateController);
+
 
 function productListController($scope) {
 
     $scope.productList = [
         {
-            Image: "../img/img1.jpg",
-            Name: "บ้านริมน้ำ สุขุมวิท",
-            Price: "5000000",
-            Category: "บ้านเดี่ยว",
-            Quatity: "1",
-            Status: "active",
+            image: "../img/img1.jpg",
+            name: "บ้านริมน้ำ สุขุมวิท",
+            price: "5000000",
+            category: "บ้านเดี่ยว",
+            quantity: "1",
+            status: "active",
         }
     ]
 
     for (var i = 0; i < 20; i++) {
         $scope.productList.push(angular.copy($scope.productList[0]));
     }
-    console.log($scope.productList);
     angular.element(document).ready(function () {
         console.log('heldofj"');
         $('#datatable1').DataTable({
@@ -31,4 +32,21 @@ function productListController($scope) {
         // Select2
         $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
     });
+}
+
+function productCreateController($scope) {
+    console.log('create product');
+    angular.element(document).ready(function () {
+        $('.select2').select2();
+        $('.select2-tag').select2({
+            tags: true,
+            tokenSeparators: [',', ' ']
+        });
+
+        // Summernote editor
+        $('#summernote').summernote({
+            height: 150,
+            tooltip: false
+        })
+    })
 }

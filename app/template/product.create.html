@@ -1,114 +1,194 @@
 <div class="am-mainpanel">
     <div class="am-pagetitle">
-        <h5 class="am-title">Products List</h5>
+        <h5 class="am-title">Products</h5>
     </div>
     <!-- am-pagetitle -->
     <div class="am-pagebody">
-
-        <div class="card pd-20 pd-sm-40">
-
-            <div class="table-wrapper">
-                <table id="datatable1" class="table display responsive nowrap">
-                    <thead>
-                        <tr>
-                            <th class="wd-15p">Image</th>
-                            <th class="wd-15p">Name</th>
-                            <th class="wd-20p">Price</th>
-                            <th class="wd-15p">Category</th>
-                            <th class="wd-10p">Quatity</th>
-                            <th class="wd-15p">Status</th>
-                            <th class="wd-10p">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img width="75" height="75" src="../img/img1.jpg" alt="">
-                            </td>
-                            <td>บ้านริมน้ำ สุขุมวิท</td>
-                            <td>5,000,000</td>
-                            <td>บ้านเดี่ยว</td>
-                            <td>1</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img width="75" height="75" src="../img/img1.jpg" alt="">
-                            </td>
-                            <td>บ้านริมน้ำ สุขุมวิท</td>
-                            <td>5,000,000</td>
-                            <td>บ้านเดี่ยว</td>
-                            <td>1</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img width="75" height="75" src="../img/img1.jpg" alt="">
-                            </td>
-                            <td>บ้านริมน้ำ สุขุมวิท</td>
-                            <td>5,000,000</td>
-                            <td>บ้านเดี่ยว</td>
-                            <td>1</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img width="75" height="75" src="../img/img1.jpg" alt="">
-                            </td>
-                            <td>บ้านริมน้ำ สุขุมวิท</td>
-                            <td>5,000,000</td>
-                            <td>บ้านเดี่ยว</td>
-                            <td>1</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img width="75" height="75" src="../img/img1.jpg" alt="">
-                            </td>
-                            <td>บ้านริมน้ำ สุขุมวิท</td>
-                            <td>5,000,000</td>
-                            <td>บ้านเดี่ยว</td>
-                            <td>1</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img width="75" height="75" src="../img/img1.jpg" alt="">
-                            </td>
-                            <td>บ้านริมน้ำ สุขุมวิท</td>
-                            <td>5,000,000</td>
-                            <td>บ้านเดี่ยว</td>
-                            <td>1</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="row row-sm mg-t-10">
+            <div class="col-xl-12">
+                <div class="card pd-20 pd-sm-40 form-layout form-layout-4">
+                    <h6 class="card-body-title">Create Product</h6>
+                    <p class="mg-b-20 mg-sm-b-30">A mockup page to create new product.</p>
+                    <div class="row">
+                        <label class="col-sm-4 form-control-label">รหัสทรัพย์สิน:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter asset code">
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Name:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter firstname">
+                        </div>
+                    </div>
+                    <!-- row -->
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Price:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter price">
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">ขนาดที่ดิน:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter size">
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Category:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <select class="form-control select2" data-placeholder="Choose Category">
+                                <option value="Firefox">บ้านเดี่ยว</option>
+                                <option value="Chrome">ตึกแถว</option>
+                                <option value="Safari">โรงงาน</option>
+                                <option value="Opera">ที่ดิน</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Status:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <select class="form-control select2" data-placeholder="Choose Status">
+                                <option value="Firefox">Active</option>
+                                <option value="Chrome">Draft</option>
+                                <option value="Safari">Hidden</option>
+                                <option value="Opera">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Sale:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <select class="form-control select2" data-placeholder="Choose Status">
+                                <option value="Firefox">Woraphon Olanwanitchakun</option>
+                                <option value="Chrome">Munin Thorn</option>
+                                <option value="Safari">Praewa Suthamphong</option>
+                                <option value="Opera">Jennis Oprasert</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Tags:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <select class="form-control select2-tag" data-placeholder="Choose Tags" multiple>
+                                <option value="Firefox">บ้าน</option>
+                                <option value="Chrome selected">อโศก</option>
+                                <option value="Safari">สุขุมวิท</option>
+                                <option value="Opera" selected>ดินแดง</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Images:
+                        </label>
+                        <div class="col-sm-8 mg-t-0 mg-sm-t-0">
+                            <label class="custom-file">
+                                <input type="file" id="file2" class="custom-file-input">
+                                <span class="custom-file-control"></span>
+                            </label>
+                            <button class="btn btn-primary mg-t-10">Browse</button>
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">&ensp;
+                        </label>
+                        <div class="col-sm-8 mg-t-20 mg-sm-t-0">
+                            <img width="300" height="200" ng-src="../img/img2.jpg">
+                            <img width="300" height="200" ng-src="../img/img3.jpg">
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Thumbnail:
+                        </label>
+                        <div class="col-sm-8 mg-t-0 mg-sm-t-0">
+                            <button class="btn btn-primary mg-t-10">Create</button>
+                        </div>
+                    </div>
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Description:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <div id="summernote"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
             </div>
-            <!-- table-wrapper -->
+            <!-- col-6 -->
+            <div class="col-xl-12">
+                <div class="card pd-20 pd-sm-40 form-layout form-layout-4">
+                    <h6 class="card-body-title">Features</h6>
+                    <div class="row">
+                        <label class="col-sm-4 form-control-label">Parking Lot:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" placeholder="Enter number">
+                        </div>
+                    </div>
+                    <!-- row -->
+                    <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Facilities:
+                            <span class="tx-danger">*</span>
+                        </label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <label class="ckbox">
+                                        <input type="checkbox">
+                                        <span>รปภ.</span>
+                                    </label>
+                                </div>
+                                <!-- col-3 -->
+                                <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+                                    <label class="ckbox">
+                                        <input type="checkbox" checked>
+                                        <span>สวนหย่อม</span>
+                                    </label>
+                                </div>
+                                <!-- col-3 -->
+                                <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+                                    <label class="ckbox">
+                                        <input type="checkbox">
+                                        <span>สระว่ายน้ำ</span>
+                                    </label>
+                                </div>
+                                <!-- col-3 -->
+                                <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+                                    <label class="ckbox">
+                                        <input type="checkbox">
+                                        <span>สโมสร</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- row -->
+                        </div>
+                    </div>
+                    <div class="form-layout-footer mg-t-30">
+                        <button class="btn btn-info mg-r-5">Submit Form</button>
+                        <button class="btn btn-secondary">Cancel</button>
+                    </div>
+                    <!-- form-layout-footer -->
+                </div>
+                <!-- card -->
+            </div>
         </div>
     </div>
     <!-- am-pagebody -->
